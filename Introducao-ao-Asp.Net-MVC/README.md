@@ -1,9 +1,16 @@
 # Introdução ao ASP.NET-MVC
 
-Entendemos que o ASP.NET é um poderoso framework para desenvolvimento Web, entregando performance, segurança, praticidade e escalabilidade.
- 
-Com ASP.NET você será capaz de desenvolver aplicações front-end, SPA, back-end, APIs e serviços de integração e comunicação. 
+Padrão MVC no ASP.NET
 
-O modelo de pipelines é uma fantástica maneira de trabalhar a configuração da sua aplicação adicionando apenas aquilo que precisar na devida ordem de execução e nada mais. 
+MODELS: 
+As models representam os dados da aplicação. Além disso, uma Model pode incluir a validação dos dados. Em resumo, o Model é 
+a representação dos dados do mundo real que pode incluir validações de estado e regras de negócio.
 
-O resultado de tudo isto é uma ótima experiência de desenvolvimento com uma incrível produtividade
+VIEWS:
+As Views são as "páginas" do site, responsáveis pela navegação, design, UX. Utilizamos HTML, CSS e JS. No caso do ASP.NET MVC 
+temos um componente em especial, o Razor. Ele é responsável por montar e entregar a View pronta para exibição.
+
+CONTROLLLER: 
+Atua como intermediária entre a Model e a View. É a Controller que responde às ações do usuário, como cliques em botões ou links. 
+Quando uma ação é disparada, a Controller é responsável por invocar o método correto que irá realiza o processamento e retornar 
+os dados necessários. Então, a Controller passa esses dados para a View.
