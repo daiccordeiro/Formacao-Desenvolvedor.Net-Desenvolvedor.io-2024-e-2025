@@ -15,6 +15,11 @@ namespace CursoEFCore.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
+        }
+    }
+}           
+ /* Movidos do 'OnModelCreating' para a Pasta 'Configurations', criando separadamente cada classe
             modelBuilder.Entity<Cliente>(p =>
             {
                 p.ToTable("Clientes");
@@ -60,7 +65,4 @@ namespace CursoEFCore.Data
                 p.Property(p => p.Quantidade).HasDefaultValue(1).IsRequired();
                 p.Property(p => p.Valor).IsRequired();
                 p.Property(p => p.Desconto).IsRequired();
-            });
-        }
-    }
-}
+            }); */        
