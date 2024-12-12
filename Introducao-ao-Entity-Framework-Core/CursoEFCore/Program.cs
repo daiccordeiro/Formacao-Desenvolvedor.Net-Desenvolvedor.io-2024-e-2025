@@ -6,10 +6,13 @@ namespace CursoEFCore
     class Program    {
         static void Main(string[] args)
         {
-            //using var db = new Data.ApplicationContext();
-            
+            using var db = new Data.ApplicationContext();
             //db.Database.Migrate(); //Indicada apenas para usar em desenvolvimento, não em produção
-            
+            var existe = db.Database.GetPendingMigrations().Any();
+            if (existe)
+            {
+                //usar alguma regra para testar se existe alguma migração pendente
+            }
             Console.WriteLine("Hello, World!");
         }
     }

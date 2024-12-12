@@ -5,8 +5,7 @@ namespace CursoEFCore.Data
 {
     public class ApplicationContext : DbContext
     {
-         // No curso estava sem o required, add para evitar erros
-        public required DbSet<Pedido> Pedidos { get; set; }    
+        public DbSet<Pedido>? Pedidos { get; set; }    
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
