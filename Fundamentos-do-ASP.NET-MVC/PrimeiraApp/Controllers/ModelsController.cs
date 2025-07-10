@@ -12,8 +12,8 @@ namespace PrimeiraApp.Controllers
             var aluno =  new Aluno()
             {
                 Nome = "A",
-                Email = "eduardo",
-                EmailConfirmacao = "eduardo.com"
+                Email = "Daiane",
+                EmailConfirmacao = "daiccordeiro.com"
             };
             
             if (TryValidateModel(aluno))
@@ -23,6 +23,7 @@ namespace PrimeiraApp.Controllers
 
             var ms = ModelState;
 
+            // Trazendo uma lista com os erros 
             var erros = ModelState.Select(x => x.Value.Errors)
                                         .Where(y => y.Count > 0)
                                         .ToList();

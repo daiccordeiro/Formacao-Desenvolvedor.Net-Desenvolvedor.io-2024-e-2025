@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations; // Importado para usar as anotações de validação (DataAnnotations)
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PrimeiraApp.Models
 {
     public class Aluno
     {
-        [Key]
+        [Key] // Chave da Model
         public int Id { get; set; }
 
         [Required(ErrorMessage = "0 campo {0} é obrigatório")]
@@ -24,9 +24,10 @@ namespace PrimeiraApp.Models
         //[EmailAddress(ErrorMessage = "O campo {0} está em formato inválido.")] - 2 formas de validar o e-mail
         public string? Email { get; set; }
 
-        [Required(ErrorMessage = "0 campo {0} é obrigatório")][Display(Name = "Confirme o e-mail")]
+        [Required(ErrorMessage = "0 campo {0} é obrigatório")]
+        [Display(Name = "Confirme o e-mail")]
         [Compare("Email", ErrorMessage = "Os e-mails informados não são identicos")]
-        [NotMapped]
+        [NotMapped] // Não mapear para o banco de dados
         public string? EmailConfirmacao { get; set; }
 
         [Required(ErrorMessage = "0 campo {0} é obrigatório")]
