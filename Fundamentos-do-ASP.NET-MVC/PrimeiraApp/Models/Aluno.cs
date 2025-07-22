@@ -27,7 +27,7 @@ namespace PrimeiraApp.Models
         [Required(ErrorMessage = "0 campo {0} é obrigatório")]
         [Display(Name = "Confirme o e-mail")]
         [Compare("Email", ErrorMessage = "Os e-mails informados não são identicos")]
-        //[NotMapped] // Não mapear para o banco de dados
+        [NotMapped] // Não mapear para o banco de dados
         public string? EmailConfirmacao { get; set; }
 
         [Required(ErrorMessage = "0 campo {0} é obrigatório")]
