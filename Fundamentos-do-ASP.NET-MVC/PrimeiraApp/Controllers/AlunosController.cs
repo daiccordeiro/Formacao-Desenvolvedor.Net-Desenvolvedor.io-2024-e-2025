@@ -33,9 +33,15 @@ namespace PrimeiraApp.Controllers
         [ValidateAntiForgeryToken] // Garante que o envio do formulário seja seguro
         public async Task <IActionResult> Create([Bind("Id,Nome,DataNascimento,Email,EmailConfirmacao,Avaliacao,Ativo")]Aluno aluno)
         {
-            _context.Alunos.Add(aluno); // Adiciona o aluno ao contexto do banco de dados
-            await _context.SaveChangesAsync(); // Salva alterações no banco de dados
-            return RedirectToAction(nameof(Index)); // Redireciona para a ação INDEX após a criação
+            // Verifica se o modelo é válido
+            if (ModelState.IsValid) 
+            {
+                _context.Alunos.Add(aluno); // Adiciona o aluno ao contexto do banco de dados
+                await _context.SaveChangesAsync(); // Salva alterações no banco de dados
+                return RedirectToAction(nameof(Index)); // Redireciona para a ação INDEX após a criação                
+            }
+
+            return View(aluno); // Se não for válido, retorna a view com os dados do aluno
         }
 
 
@@ -57,11 +63,27 @@ namespace PrimeiraApp.Controllers
         // POST: Alunos/Edit
         [HttpPost]
         [ValidateAntiForgeryToken] // Garante que o envio do formulário seja seguro
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DataNascimento,Email,EmailConfirmacao,Avaliacao,Ativo")] Aluno aluno)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DataNascimento,Email,Avaliacao,Ativo")] Aluno aluno)
         {
-            _context.Update(aluno); 
-            await _context.SaveChangesAsync(); 
-            return RedirectToAction(nameof(Index)); 
+            // Verifica se o ID do aluno corresponde ao ID passado na URL  
+            if (id != aluno.Id) 
+            {
+                return NotFound(); // Se não corresponder, retorna NotFound (404)
+            }
+
+
+            // Remove a validação do campo EmailConfirmacao, pois não é necessário no Edit
+            ModelState.Remove("EmailConfirmacao"); 
+
+
+            // Verifica se o modelo é válido
+            if (ModelState.IsValid) 
+            {
+                _context.Update(aluno); 
+                await _context.SaveChangesAsync(); 
+                return RedirectToAction(nameof(Index));            
+            }
+            return View(aluno); // Se não for válido, retorna a view com os dados do aluno
         }
 
     }
