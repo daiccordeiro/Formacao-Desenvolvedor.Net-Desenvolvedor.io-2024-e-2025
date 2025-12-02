@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+
+Console.WriteLine("Meu Primeiro Programa!");
+Console.WriteLine("Exemplo de variáveis:");
+Variaveis.ExibirVariaveis();
