@@ -10,6 +10,10 @@ Variaveis.ExibirVariaveis();
 Console.WriteLine("Exemplo de constantes:");
 Constantes.ExibirConstantes();
 
-//Operadores.cs
+//OpAritmeticos.cs
 Console.WriteLine("Exemplo de operadores aritméticos:");
-Operadores.ExibirOperadores();
+OpAritmeticos.ExibirOpAritmeticos();
+
+//OpRelacionais.cs
+Console.WriteLine("Exemplo de operadores relacionais:");
+OpRelacionais.ExibirOpRelacionais();

@@ -1,7 +1,7 @@
-// Operações Aritméticas
-public static class Operadores
+// Operadores Aritméticos
+public static class OpAritmeticos
 {
-    public static void ExibirOperadores()
+    public static void ExibirOpAritmeticos()
     {
         int numero1 = 1;
         var numero2 = 2;
