@@ -18,6 +18,10 @@ OpAritmeticos.ExibirOpAritmeticos();
 Console.WriteLine("Exemplo de operadores relacionais:");
 OpRelacionais.ExibirOpRelacionais();
 
-//OpLogicos
+//OpLogicos.cs
 Console.WriteLine("Exemplo de operadores lógicos:");
 OpLogicos.ExibirOpLogicos();
+
+//OpTernario.cs
+Console.WriteLine("Exemplo de operador ternário:");
+OpTernario.ExibirOpTernario();
