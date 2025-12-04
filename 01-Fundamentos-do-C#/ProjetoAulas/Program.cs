@@ -2,6 +2,7 @@
 
 Console.WriteLine("Meu Primeiro Programa!");
 
+//01-HandsOnCode
 //Variaveis.cs
 Console.WriteLine("Exemplo de variáveis:");
 Variaveis.ExibirVariaveis();
@@ -26,7 +27,8 @@ OpLogicos.ExibirOpLogicos();
 Console.WriteLine("Exemplo de operador ternário:");
 OpTernario.ExibirOpTernario();
 
-//Declarando Funções
+
+//02-Funções
 //funNomeCompleto.cs
 Console.WriteLine("Exemplo de Função:");
 FunNomeCompleto.ExibirFuncaoNomeCompleto();
@@ -34,3 +36,9 @@ FunNomeCompleto.ExibirFuncaoNomeCompleto();
 //funParametros.cs
 Console.WriteLine("Exemplo de Função com Parâmetros:");
 FunParametros.ExibirFuncaoParametros();
+
+
+//03-Estrutura de Dados
+//ArrayList.cs
+Console.WriteLine("Exemplo de ArrayList:");
+ExemploArrayList.ExibirArrayList();
