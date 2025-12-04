@@ -30,3 +30,7 @@ OpTernario.ExibirOpTernario();
 //funNomeCompleto.cs
 Console.WriteLine("Exemplo de Função:");
 FunNomeCompleto.ExibirFuncaoNomeCompleto();
+
+//funParametros.cs
+Console.WriteLine("Exemplo de Função com Parâmetros:");
+FunParametros.ExibirFuncaoParametros();
