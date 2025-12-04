@@ -17,3 +17,7 @@ OpAritmeticos.ExibirOpAritmeticos();
 //OpRelacionais.cs
 Console.WriteLine("Exemplo de operadores relacionais:");
 OpRelacionais.ExibirOpRelacionais();
+
+//OpLogicos
+Console.WriteLine("Exemplo de operadores lógicos:");
+OpLogicos.ExibirOpLogicos();
