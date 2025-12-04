@@ -25,3 +25,8 @@ OpLogicos.ExibirOpLogicos();
 //OpTernario.cs
 Console.WriteLine("Exemplo de operador ternário:");
 OpTernario.ExibirOpTernario();
+
+//Declarando Funções
+//funNomeCompleto.cs
+Console.WriteLine("Exemplo de Função:");
+FunNomeCompleto.ExibirFuncaoNomeCompleto();
