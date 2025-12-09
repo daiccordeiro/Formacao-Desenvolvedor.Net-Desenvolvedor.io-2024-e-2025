@@ -42,3 +42,7 @@ FunParametros.ExibirFuncaoParametros();
 //ArrayList.cs
 Console.WriteLine("Exemplo de ArrayList:");
 ExemploArrayList.ExibirArrayList();
+
+//ArrayTipado.cs
+Console.WriteLine("Exemplo de ArrayTipado:");
+ExemploArrayTipado.ExibirArrayTipado();
