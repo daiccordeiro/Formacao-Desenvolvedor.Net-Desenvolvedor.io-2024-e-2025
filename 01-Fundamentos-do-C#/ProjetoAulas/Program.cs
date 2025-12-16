@@ -84,3 +84,7 @@ ExemploForEach.ExibirForEach();
 //ExemploWhile.cs
 Console.WriteLine("Exemplo de While:");
 ExemploWhile.ExibirWhile();
+
+//ExemploBreakeContinue.cs
+Console.WriteLine("Exemplo de Break e Continue:");
+ExemploBreakeContinue.ExibirBreakeContinue();
