@@ -68,3 +68,7 @@ ExemploPilha.ExibirPilha();
 //ExemploIFeElse.cs
 Console.WriteLine("Exemplo de IF e Else:");
 ExemploIFeElse.ExibirIFeElse();
+
+//ExemploSwitch.cs
+Console.WriteLine("Exemplo de Switch:");
+ExemploSwitch.ExibirSwitch();
