@@ -80,3 +80,7 @@ ExemploFor.ExibirFor();
 //ExemploForEach.cs
 Console.WriteLine("Exemplo de ForEach:");
 ExemploForEach.ExibirForEach();
+
+//ExemploWhile.cs
+Console.WriteLine("Exemplo de While:");
+ExemploWhile.ExibirWhile();
