@@ -46,3 +46,7 @@ ExemploArrayList.ExibirArrayList();
 //ArrayTipado.cs
 Console.WriteLine("Exemplo de ArrayTipado:");
 ExemploArrayTipado.ExibirArrayTipado();
+
+//Lista.cs
+Console.WriteLine("Exemplo de Lista:");
+ExemploLista.ExibirLista();
