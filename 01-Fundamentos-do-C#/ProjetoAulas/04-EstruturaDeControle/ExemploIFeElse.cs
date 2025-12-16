@@ -1,4 +1,4 @@
-//Stack - Fila (LIFO) - Último que entra é o Primeiro que sai
+//IF, Else e ElseIf
 using System.Collections;
 
 public static class ExemploIFeElse

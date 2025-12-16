@@ -1,4 +1,4 @@
-//Stack - Fila (LIFO) - Último que entra é o Primeiro que sai
+//Switch
 using System.Collections;
 
 public static class ExemploSwitch
