@@ -76,3 +76,7 @@ ExemploSwitch.ExibirSwitch();
 //ExemploFor.cs
 Console.WriteLine("Exemplo de FOR:");
 ExemploFor.ExibirFor();
+
+//ExemploForEach.cs
+Console.WriteLine("Exemplo de ForEach:");
+ExemploForEach.ExibirForEach();
