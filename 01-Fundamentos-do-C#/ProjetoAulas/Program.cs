@@ -50,3 +50,7 @@ ExemploArrayTipado.ExibirArrayTipado();
 //Lista.cs
 Console.WriteLine("Exemplo de Lista:");
 ExemploLista.ExibirLista();
+
+//Dicionario.cs
+Console.WriteLine("Exemplo de Dicionário:");
+ExemploDicionario.ExibirDicionario();
