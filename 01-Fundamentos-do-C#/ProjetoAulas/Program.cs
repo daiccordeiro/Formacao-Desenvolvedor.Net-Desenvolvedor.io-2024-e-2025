@@ -72,3 +72,7 @@ ExemploIFeElse.ExibirIFeElse();
 //ExemploSwitch.cs
 Console.WriteLine("Exemplo de Switch:");
 ExemploSwitch.ExibirSwitch();
+
+//ExemploFor.cs
+Console.WriteLine("Exemplo de FOR:");
+ExemploFor.ExibirFor();
