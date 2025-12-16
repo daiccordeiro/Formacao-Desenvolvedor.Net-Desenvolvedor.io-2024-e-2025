@@ -58,3 +58,7 @@ ExemploDicionario.ExibirDicionario();
 //Fila.cs
 Console.WriteLine("Exemplo de Fila:");
 ExemploFila.ExibirFila();
+
+//Pilha.cs
+Console.WriteLine("Exemplo de Pilha:");
+ExemploPilha.ExibirPilha();
