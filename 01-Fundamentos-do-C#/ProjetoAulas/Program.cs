@@ -62,3 +62,9 @@ ExemploFila.ExibirFila();
 //Pilha.cs
 Console.WriteLine("Exemplo de Pilha:");
 ExemploPilha.ExibirPilha();
+
+
+//04-Estrutura de Controle
+//ExemploIFeElse.cs
+Console.WriteLine("Exemplo de IF e Else:");
+ExemploIFeElse.ExibirIFeElse();
